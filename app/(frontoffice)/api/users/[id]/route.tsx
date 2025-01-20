@@ -25,7 +25,7 @@ export async function GET(request: NextRequest, { params }: Props) {
     );
   }
 
-  return NextResponse.json({ id, name: "ala" });
+  return NextResponse.json(user);
 }
 
 export async function PUT(request: NextRequest, { params }: Props) {
